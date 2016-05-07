@@ -16,8 +16,7 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
-	 $(LOCAL_PATH)/dt.img:dt.img
+    $(LOCAL_KERNEL):kernel
 
 $(call inherit-product, build/target/product/full.mk)
 

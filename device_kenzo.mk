@@ -3,14 +3,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/Xiaomi/kenzo/kenzo-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/kenzo/kenzo-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/Xiaomi/kenzo/overlay
+DEVICE_PACKAGE_OVERLAYS += device/xiaomi/kenzo/overlay
 
-LOCAL_PATH := device/Xiaomi/kenzo
+LOCAL_PATH := device/xiaomi/kenzo
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/Xiaomi/kenzo/kernel
+	LOCAL_KERNEL := device/xiaomi/kenzo/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif

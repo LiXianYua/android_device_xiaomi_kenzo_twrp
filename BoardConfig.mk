@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 BOARD_VENDOR := xiaomi
-LOCAL_PATH := device/Xiaomi/kenzo
+LOCAL_PATH := device/xiaomi/kenzo
 
 # inherit from the proprietary version
--include vendor/Xiaomi/kenzo/BoardConfigVendor.mk
+-include vendor/xiaomi/kenzo/BoardConfigVendor.mk
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8952
@@ -53,7 +53,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_PREBUILT_KERNEL := device/Xiaomi/kenzo/kernel
+TARGET_PREBUILT_KERNEL := device/xiaomi/kenzo/kernel
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x105c0000
@@ -73,7 +73,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/Xiaomi/kenzo/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/xiaomi/kenzo/recovery.fstab
 
 #twrp
 TARGET_USERIMAGES_USE_F2FS := true

@@ -7,7 +7,7 @@ PRODUCT_RELEASE_NAME := kenzo
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/Xiaomi/kenzo/device_kenzo.mk)
+$(call inherit-product, device/xiaomi/kenzo/device_kenzo.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kenzo
